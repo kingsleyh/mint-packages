@@ -2422,6 +2422,8 @@ class $Repository extends Component {
          await $Maybe.map(this.findTags.bind(this), $Maybe.map(((i) => {
     return i.tagsUrl
     }), this.item))
+
+     await emojify.run();
       }
       catch(_error) {
         if (_error instanceof DoError) {
