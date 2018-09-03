@@ -34,6 +34,8 @@ component Repository {
       item
       |> Maybe.map((i : Item) : String => { i.tagsUrl })
       |> Maybe.map(findTags)
+
+      `emojify.run();`
     }
   }
 
